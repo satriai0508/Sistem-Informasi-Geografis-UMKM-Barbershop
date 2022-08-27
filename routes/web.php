@@ -33,5 +33,4 @@ Route::middleware(['auth'])->group(function(){
 
     Route::resource('/admin/toko', TokoController::class);
     Route::resource('/admin/layanan', LayananController::class)->except(['show']);
-    Route::resource('/admin/paket', PaketController::class);
 });
