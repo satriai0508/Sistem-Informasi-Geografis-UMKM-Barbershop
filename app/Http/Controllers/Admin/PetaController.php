@@ -15,7 +15,9 @@ class PetaController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.map.index',[
+            'maps' => Peta::get()
+        ]);
     }
 
     /**
@@ -47,7 +49,9 @@ class PetaController extends Controller
      */
     public function show(Peta $peta)
     {
-        //
+        return view('admin.map.show',[
+            'kordinats' => Peta::find($peta)
+        ]);
     }
 
     /**

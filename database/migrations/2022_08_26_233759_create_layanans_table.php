@@ -15,6 +15,7 @@ class CreateLayanansTable extends Migration
     {
         Schema::create('layanans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_toko')->nullable();
             $table->string('nama')->nullable();
             $table->string('harga')->nullable();
             $table->timestamps();

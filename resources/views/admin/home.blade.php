@@ -8,7 +8,7 @@
         <div class="card-header"><i class="mdi mdi-map-marker-multiple"></i> Peta</div>
         <div class="card-body">
           <h5 class="card-title"><a href="#" class="text-bold text-decoration-none text-white">Peta</a></h5>
-          <p class="card-text">Total data : {{ App\Models\Toko::count() }}</p>
+          <p class="card-text">Total data : {{ App\Models\Peta::count() }}</p>
         </div>
       </div>
       <div class="card text-bg-dark col-2 me-lg-2 m-25">
@@ -23,13 +23,6 @@
         <div class="card-body">
           <h5 class="card-title"><a href="#" class="text-bold text-decoration-none text-white">Layanan</a></h5>
           <p class="card-text">Total data : {{ App\Models\Layanan::count() }}</p>
-        </div>
-      </div>
-      <div class="card text-bg-info col-2 me-lg-2 m-25">
-        <div class="card-header"><i class="mdi mdi-store"></i> Produk</div>
-        <div class="card-body">
-          <h5 class="card-title"><a href="#" class="text-bold text-decoration-none text-dark">Produk</a></h5>
-          <p class="card-text">Total data : {{ App\Models\Paket::count() }}</p>
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ class LayananFactory extends Factory
     public function definition()
     {
         return [
+            'nama_toko' => $this->faker->company(),
             'nama' => $this->faker->sentence(2, true),
             'harga' => $this->faker->numerify('#####')
         ];

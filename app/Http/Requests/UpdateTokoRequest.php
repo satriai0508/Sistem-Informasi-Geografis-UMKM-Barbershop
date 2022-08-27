@@ -24,7 +24,15 @@ class UpdateTokoRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'x' => 'required',
+            'y' => 'required',
+            'nama' => 'required|max:255',
+            'alamat' => 'required|max:255',
+            'no_hp' => 'required|max:255',
+            'pemilik' => 'required|max:255',
+            'jam_buka' => 'required',
+            'jam_tutup' => 'required',
+            'image' => 'required|max:5120|mimes:jpg,png',
         ];
     }
 }

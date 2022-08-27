@@ -24,7 +24,9 @@ class UpdateLayananRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nama_toko' => 'required|max:255',
+            'nama' => 'required|max:255',
+            'harga' => 'required|max:255',
         ];
     }
 }

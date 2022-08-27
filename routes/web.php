@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\Admin\LayananController;
-use App\Http\Controllers\Admin\PaketController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\LayananController;
+use App\Http\Controllers\Admin\PaketController;
 use App\Http\Controllers\Admin\PetaController;
 use App\Http\Controllers\Admin\TokoController;
 use App\Http\Controllers\PetaController as Peta;
@@ -32,7 +32,6 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/admin/peta/{peta:nama}', [PetaController::class, 'show'])->name('adminPeta.show');
 
     Route::resource('/admin/toko', TokoController::class);
-    Route::resource('/admin/layanan', LayananController::class);
+    Route::resource('/admin/layanan', LayananController::class)->except(['show']);
     Route::resource('/admin/paket', PaketController::class);
-
 });

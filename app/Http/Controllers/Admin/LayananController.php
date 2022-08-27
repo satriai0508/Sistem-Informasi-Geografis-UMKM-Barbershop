@@ -16,7 +16,9 @@ class LayananController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.layanan.index',[
+            'layanans' => Layanan::latest()->get()
+        ]);
     }
 
     /**
@@ -26,7 +28,7 @@ class LayananController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.layanan.create');
     }
 
     /**
@@ -37,7 +39,11 @@ class LayananController extends Controller
      */
     public function store(StoreLayananRequest $request)
     {
-        //
+        $validate = $request->validate();
+
+        Layanan::create($validate);
+
+        return redirect('/admin/layanan')->with('success','Updated Successfully!');
     }
 
     /**
@@ -48,7 +54,9 @@ class LayananController extends Controller
      */
     public function show(Layanan $layanan)
     {
-        //
+        return view('admin.layanan.show',[
+            'layanans' => Layanan::find($layanan)
+        ]);
     }
 
     /**
@@ -59,7 +67,9 @@ class LayananController extends Controller
      */
     public function edit(Layanan $layanan)
     {
-        //
+        return view('admin.layanan.edit',[
+            'layanans' => $layanan
+        ]);
     }
 
     /**
@@ -71,7 +81,11 @@ class LayananController extends Controller
      */
     public function update(UpdateLayananRequest $request, Layanan $layanan)
     {
-        //
+        $validate = $request->validate();
+
+        Layanan::where('id', $layanan->id)->update($validate);
+
+        return redirect('/admin/layanan')->with('success','Updated Successfully!');
     }
 
     /**
@@ -82,6 +96,8 @@ class LayananController extends Controller
      */
     public function destroy(Layanan $layanan)
     {
-        //
+        Layanan::destroy($layanan->id);
+
+        return redirect('/admin/layanan')->with('success','Deleted Successfully!');
     }
 }

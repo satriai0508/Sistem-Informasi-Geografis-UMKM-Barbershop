@@ -154,20 +154,16 @@
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home') }}" aria-expanded="false"><i class="me-3 mdi mdi-view-dashboard fs-3" aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/peta" aria-expanded="false">
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('adminPeta.index') }}" aria-expanded="false">
                 <i class="me-3 mdi mdi-map-marker-multiple fs-3" aria-hidden="true"></i><span class="hide-menu">Peta</span></a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/toko" aria-expanded="false">
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('toko.index') }}" aria-expanded="false">
                 <i class="me-3 mdi mdi-store-24-hour fs-3" aria-hidden="true"></i><span class="hide-menu">Toko</span></a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/layanan" aria-expanded="false">
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('layanan.index') }}" aria-expanded="false">
                 <i class="me-3 mdi mdi-store fs-3" aria-hidden="true"></i><span class="hide-menu">Layanan</span></a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/paket" aria-expanded="false">
-                <i class="me-3 mdi mdi-store fs-3" aria-hidden="true"></i><span class="hide-menu">Paket</span></a>
             </li>
             <li class="sidebar-item">
               <form action="{{ route('logout') }}" method="post">
