@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Peta;
+use App\Models\Layanan;
 use Illuminate\Http\Request;
 
 class PetaController extends Controller
@@ -49,7 +50,8 @@ class PetaController extends Controller
     public function show(Peta $peta)
     {
         return view('home.map',[
-            'maps' => Peta::find($peta)
+            'maps' => Peta::find($peta),
+            'layanans' => Layanan::where('nama_toko', '='. auth()->user()->name)->get()
         ]);
     }
 

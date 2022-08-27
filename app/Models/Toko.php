@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Layanan;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Toko extends Model
 {
@@ -24,4 +26,14 @@ class Toko extends Model
         'jam_buka',
         'jam_tutup'
     ];
+
+    /**
+     * Get the layanan that owns the Toko
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function layanan(): BelongsTo
+    {
+        return $this->belongsTo(Layanan::class,'id');
+    }
 }
