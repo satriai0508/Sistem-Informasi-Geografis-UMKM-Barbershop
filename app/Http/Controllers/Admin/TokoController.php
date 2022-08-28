@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Toko;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreTokoRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Requests\UpdateTokoRequest;
+use App\Http\Controllers\Controller;
 
 class TokoController extends Controller
 {
@@ -45,12 +44,21 @@ class TokoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreTokoRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreTokoRequest $request)
+    public function store(Request $request)
     {
-        $validate = $request->validate();
+        $validate = $request->validate([
+            'x' => 'required',
+            'y' => 'required',
+            'nama' => 'required|max:255',
+            'alamat' => 'required|max:255',
+            'no_hp' => 'required|max:255',
+            'pemilik' => 'required|max:255',
+            'jam_buka' => 'required',
+            'jam_tutup' => 'required',
+        ]);
 
         if($request->file('image')){
             $validate['image'] = $request->file('image')->store('images');
@@ -90,13 +98,23 @@ class TokoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateTokoRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Toko  $toko
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateTokoRequest $request, Toko $toko)
+    public function update(Request $request, Toko $toko)
     {
-        $validate = $request->validate();
+        $validate = $request->validate([
+            'x' => 'required',
+            'y' => 'required',
+            'nama' => 'required|max:255',
+            'alamat' => 'required|max:255',
+            'no_hp' => 'required|max:255',
+            'pemilik' => 'required|max:255',
+            'jam_buka' => 'required',
+            'jam_tutup' => 'required',
+            'image' => 'required|max:5120|mimes:jpg,png',
+        ]);
 
         if($request->file('image')){
             if($request->oldImage){

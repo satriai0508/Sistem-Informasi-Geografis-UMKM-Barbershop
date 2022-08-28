@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Layanan;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreLayananRequest;
-use App\Http\Requests\UpdateLayananRequest;
 
-class LayananController extends Controller
+class LayananDashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,21 @@ class LayananController extends Controller
      */
     public function index()
     {
-        return view('admin.layanan.index',[
-            'layanans' => Layanan::latest()->get()
-        ]);
+        $admin = auth()->user()->is_admin;
+        if($admin)
+        {
+            return view('admin.layanan.index',[
+                'layanans' => Layanan::latest()->get()
+            ]);
+        }
+
+        $user = auth()->user()->name;
+        if($user)
+        {
+            return view('admin.layanan.index',[
+                'layanans' => Layanan::where('nama_toko','=', $user)->get()
+            ]);
+        }
     }
 
     /**
@@ -34,13 +45,18 @@ class LayananController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreLayananRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreLayananRequest $request)
+    public function store(Request $request)
     {
-        $validate = $request->validate();
+        $validate = $request->validate([
+            'nama_toko' => 'required|max:255',
+            'nama' => 'required|max:255',
+            'harga' => 'required|max:255',
+        ]);
 
+        $validate['nama_toko'] = auth()->user()->name;
         Layanan::create($validate);
 
         return redirect('/admin/layanan')->with('success','Updated Successfully!');
@@ -54,9 +70,7 @@ class LayananController extends Controller
      */
     public function show(Layanan $layanan)
     {
-        return view('admin.layanan.show',[
-            'layanans' => Layanan::find($layanan)
-        ]);
+        //
     }
 
     /**
@@ -75,14 +89,19 @@ class LayananController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateLayananRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Layanan  $layanan
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateLayananRequest $request, Layanan $layanan)
+    public function update(Request $request, Layanan $layanan)
     {
-        $validate = $request->validate();
+        $validate = $request->validate([
+            'nama_toko' => 'required|max:255',
+            'nama' => 'required|max:255',
+            'harga' => 'required|max:255',
+        ]);
 
+        $validate['nama_toko'] = auth()->user()->name;
         Layanan::where('id', $layanan->id)->update($validate);
 
         return redirect('/admin/layanan')->with('success','Updated Successfully!');
