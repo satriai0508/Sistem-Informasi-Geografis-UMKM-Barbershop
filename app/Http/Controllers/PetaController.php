@@ -50,8 +50,7 @@ class PetaController extends Controller
     public function show(Peta $peta)
     {
         return view('home.map',[
-            'maps' => Peta::find($peta),
-            'layanans' => Layanan::where('nama_toko', '='. auth()->user()->name)->get()
+            'maps' => Peta::find($peta)
         ]);
     }
 

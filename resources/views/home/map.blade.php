@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="card">
-  <div class="card-body">
+  < class="card-body">
     <div class="container-fluid">
       <div class="col-12 mt-lg-2 mb-lg-2">
         <div class="row g-3 mt-lg-1 mb-lg-1">
@@ -35,32 +35,28 @@
         </div>
       </div>
     </div>
-
     <div class="container-fluid">
-      <div id="map" style="height: 500px; margin: 50px;">
+        <div id="map" style="height: 500px; margin: 50px;">
         <script>
-          // var map = L.map('map').setView([-0.471852, 117.160556], 13);
-          var curLocation = [0, 0];
-          if (curLocation[0] == 0 && curLocation[1] == 0) {
-            curLocation = [<?= $maps[0]->x ?>, <?= $maps[0]->y ?>]
+            // var map = L.map('map').setView([-0.471852, 117.160556], 13);
+            var curLocation = [0, 0];
+            if (curLocation[0] == 0 && curLocation[1] == 0) {
+                curLocation = [<?= $maps[0]->x ?>, <?= $maps[0]->y ?>]
             }
             var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
-                contributors ',
+                osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                 osm = L.tileLayer(osmUrl, {
-                  maxZoom: 18
-                  , attribution: osmAttrib
+                    maxZoom: 18,
+                    attribution: osmAttrib
                 });
-                var map = L.map('map').setView([ < ? = $maps[0] - > x ? > , < ? = $maps[0] - > y ? > ], 15).addLayer(osm);
-
+            var map = L.map('map').setView([<?= $maps[0]->x ?>, <?= $maps[0]->y ?>], 15).addLayer(osm);
         </script>
         @foreach ($maps as $data)
-        <script>
-          var markerLayers = L.marker([ < ? = $data - > x ? > , < ? = $data - > y ? > ]).addTo(map);
-
-        </script>
+            <script>
+                var markerLayers = L.marker([<?= $data->x ?>, <?= $data->y ?>]).addTo(map);
+            </script>
         @endforeach
-      </div>
+    </div>
     </div>
   </div>
 </div>
