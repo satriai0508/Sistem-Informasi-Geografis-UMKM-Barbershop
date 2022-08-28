@@ -10,7 +10,9 @@
     @endif
     <div class="d-inline">
       <div class="d-flex justify-content-center ">
+        @cannot('admin')
         <a href="/admin/toko/create" class="btn btn-success mb-2"><i data-feather="file-plus"></i></a>
+        @endcannot
       </div>
     </div>
     <div class="table-responsive">
@@ -66,17 +68,17 @@
             </td>
             @endif
             <td>
-            @cannot('admin')
+              @can('admin')
               <a href="/admin/toko/{{ $usaha->id }}" class="btn btn-info"><i data-feather="eye"></i></a>
               <a href="/admin/toko/{{ $usaha->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
-            @endcannot
-              @can('admin')
+              @endcan
+              @cannot('admin')
               <form action="/admin/toko/{{ $usaha->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf
                 <button href="/admin/toko/{{ $usaha->id }}" class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')"><i data-feather="trash"></i></button>
               </form>
-              @endcan
+              @endcannot
             </td>
           </tr>
           @endforeach
