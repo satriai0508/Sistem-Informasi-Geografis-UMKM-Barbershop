@@ -8,7 +8,7 @@
         <div class="row g-3 mt-lg-1 mb-lg-1">
           <div class="col-md-4">
             @if($maps[0]->image)
-            <img src="{{ asset('storage/'. $maps[0]->image) }}" class="img-fluid rounded-start mt-lg-2 mb-lg-2 img-thumbnail" alt="{{ $maps[0]->nama }}">
+            <img src="{{ asset('storage/'. $maps[0]->image) }}" class="img-fluid rounded-start mt-lg-2 mb-lg-2 img-thumbnail h-50 w-50" alt="{{ $maps[0]->nama }}">
             @else
             <img src="https://source.unsplash.com/1200x400?{{ $maps[0]->nama }}" class="img-fluid rounded-start mt-lg-2 mb-lg-2 img-thumbnail" alt="{{ $maps[0]->nama }}">
             @endif
