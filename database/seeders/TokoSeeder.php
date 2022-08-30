@@ -14,32 +14,35 @@ class TokoSeeder extends Seeder
      */
     public function run()
     {
+        // isi tokonya disini ikuti contoh
         $jam_buka = '08:00:00';
         $jam_tutup = '22:00:00';
 
+        
         Toko::create([
-            'x' => '-0.471852',
-            'y' => '117.160556',
+            'x' => '-0.5750325', // latlang
+            'y' => '117.192165', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
-            'nama' => 'Alby Barbershop',
-            'no_hp' => '08125461564',
-            'alamat' => 'Jl. Gelatik 2 No. 1, Sungai Pinang Dalam, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur'
+            'nama' => 'Nusantara Barbershop',
+            'no_hp' => '082122074447',
+            'alamat' => 'Jl. Reformasi, Bukuan, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
+       
         ]);
 
         Toko::create([
-            'x' => '-0.465523',
-            'y' => '117.172613',
+            'x' => '-0.465523', // latlang
+            'y' => '117.172613', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
             'nama' => 'Putri Barbershop',
             'no_hp' => '082122074447',
-            'alamat' => 'Jl. DI Panjaitan No. 10, Sungai Pinang Dalam, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur'
+            'alamat' => 'Jl. Reformasi, Bukuan, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
         ]);
 
         Toko::create([
-            'x' => '-0.462351',
-            'y' => '117.174818',
+            'x' => '-0.462351', //latlang
+            'y' => '117.174818', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
             'nama' => 'Ikko Barbershop',

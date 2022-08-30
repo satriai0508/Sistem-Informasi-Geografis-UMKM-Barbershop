@@ -22,11 +22,11 @@ class UserSeeder extends Seeder
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
             'is_admin' => true
-        ]);
-
+            ]);
+            
         User::create([
-            'name' => 'Alby Barbershop',
-            'email' => 'alby.barber@gmail.com',
+            'name' => 'Nusantara Barbershop',
+            'email' => 'nusantara.barber@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),

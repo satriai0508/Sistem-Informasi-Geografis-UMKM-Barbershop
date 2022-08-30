@@ -14,10 +14,11 @@ class LayananSeeder extends Seeder
      */
     public function run()
     {
+        // isi layanannya disini ikuti contoh
         Layanan::create([
-            'nama_toko' => 'Alby Barbershop',
-            'nama' => 'cepak polos',
-            'harga' => '5000000'
+            'nama_toko' => 'Nusantara Barbershop',
+            'nama' => 'pangkas rambut',
+            'harga' => '20.000'
         ]);
 
         Layanan::create([
