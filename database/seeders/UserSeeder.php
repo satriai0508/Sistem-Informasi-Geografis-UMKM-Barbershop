@@ -22,8 +22,8 @@ class UserSeeder extends Seeder
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
             'is_admin' => true
-            ]);
-            
+        ]);
+        
         User::create([
             'name' => 'Nusantara Barbershop',
             'email' => 'nusantara.barber@gmail.com',
@@ -293,7 +293,5 @@ class UserSeeder extends Seeder
             'remember_token' => Str::random(10),
             'is_admin' => false
         ]);
-
-
     }
 }

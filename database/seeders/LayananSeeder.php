@@ -87,7 +87,7 @@ class LayananSeeder extends Seeder
             'harga' => '50.000'
         ]);
 
-        
+
         Layanan::create([
             'nama_toko' => 'Classics BARBERSHOP',
             'nama' => 'pangkas rambut',
@@ -195,9 +195,5 @@ class LayananSeeder extends Seeder
             'nama' => 'pangkas rambut',
             'harga' => '50.000'
         ]);
-
-
-
-       
     }
 }

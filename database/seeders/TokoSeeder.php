@@ -18,7 +18,7 @@ class TokoSeeder extends Seeder
         $jam_buka = '08:00:00';
         $jam_tutup = '22:00:00';
 
-        
+
         Toko::create([
             'x' => '-0.5750325', // latlang
             'y' => '117.192165', //latlang
@@ -28,7 +28,7 @@ class TokoSeeder extends Seeder
             'pemilik' => 'Rian Hidayat',
             'no_hp' => '082122074447',
             'alamat' => 'Jl. Reformasi, Bukuan, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
-       
+
         ]);
 
         Toko::create([
@@ -53,7 +53,7 @@ class TokoSeeder extends Seeder
             'alamat' => 'C5PC+2RF, RW.Rw, Rw. Makmur, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75251'
         ]);
 
-        
+
         Toko::create([
             'x' => '-0.5640677', //latlang
             'y' => '117.1699189', //latlang
@@ -120,7 +120,7 @@ class TokoSeeder extends Seeder
             'alamat' => 'Jl. Daeng Mangkona No.RT.17, Baqa, Kec. Samarinda Seberang, Kota Samarinda, Kalimantan Timur 75131'
         ]);
 
-        
+
         Toko::create([
             'x' => '-0.5264018', //latlang
             'y' => '117.0735187', //latlang
@@ -351,11 +351,5 @@ class TokoSeeder extends Seeder
             'no_hp' => '0823936908811',
             'alamat' => 'Jl. Juanda 2 No.24, Air Hitam, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75243'
         ]);
-
-        
-
-
-        
-        
     }
 }
