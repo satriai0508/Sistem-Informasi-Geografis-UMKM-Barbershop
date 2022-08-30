@@ -10,7 +10,9 @@
     @endif
     <div class="d-inline">
       <div class="d-flex justify-content-center ">
+        @cannot('admin')
         <a href="/admin/layanan/create" class="btn btn-success mb-2"><i data-feather="file-plus"></i></a>
+        @endcannot
       </div>
     </div>
     <div class="table-responsive">
@@ -50,15 +52,15 @@
             </td>
             @endif
             <td>
-            @cannot('admin')
-              <a href="/admin/layanan/{{ $layanan->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
-            @endcannot
               @can('admin')
+              <a href="/admin/layanan/{{ $layanan->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
+              @cannot('admin')
               <form action="/admin/layanan/{{ $layanan->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf
                 <button href="/admin/layanan/{{ $layanan->id }}" class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')"><i data-feather="trash"></i></button>
               </form>
+              @endcannot
               @endcan
             </td>
           </tr>
