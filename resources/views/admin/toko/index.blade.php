@@ -68,13 +68,17 @@
             </td>
             @endif
             <td>
-              @can('admin')
-              <a href="/admin/toko/{{ $usaha->id }}" class="btn btn-info"><i data-feather="eye"></i></a>
-              @endcan
               @cannot('admin')
+              <a href="/admin/toko/{{ $usaha->id }}" class="btn btn-info"><i data-feather="eye"></i></a>
               <a href="/admin/toko/{{ $usaha->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
+              <form action="/admin/toko/{{ $usaha->id }}" method="post" class="d-inline">
+                @method('delete')
+                @csrf
+                <button href="/admin/toko/{{ $usaha->id }}" class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')"><i data-feather="trash"></i></button>
+              </form>
               @endcannot
               @can('admin')
+              <a href="/admin/toko/{{ $usaha->id }}" class="btn btn-info"><i data-feather="eye"></i></a>
               <form action="/admin/toko/{{ $usaha->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf
