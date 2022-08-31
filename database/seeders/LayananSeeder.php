@@ -29,8 +29,175 @@ class LayananSeeder extends Seeder
 
         Layanan::create([
             'nama_toko' => 'PUTRA DAERAH BARBERSHOP',
-            'nama' => 'cukur bulu ketiak beruang',
+            'nama' => 'pangkas rambut',
             'harga' => '50.000'
         ]);
+
+        Layanan::create([
+            'nama_toko' => 'Yoga BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'M&J BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'M&J BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Ponixcut BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Eghe BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bark BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => '23 BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Barrack-Cut BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Awiers BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        
+        Layanan::create([
+            'nama_toko' => 'Classics BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Rock N Cut BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bara BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'BeJO BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Keluncum BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bejo BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'CORNERS BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'GoodFellas BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'JORDAN HAIR STUDIO BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'JooxBox BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Star BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Outcast BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'ALAIKA BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'MERAH PUTIH BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bohemians BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bohemians BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'TANGGA BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+        Layanan::create([
+            'nama_toko' => 'Bujang BARBERSHOP',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
+        ]);
+
+
+
+       
     }
 }

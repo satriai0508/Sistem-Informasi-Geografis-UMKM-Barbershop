@@ -6,7 +6,7 @@
             <div class="row">
                     <div class="text-center">
                     @if($kordinats[0]->image)
-                    <img src="{{ asset('storage/'. $kordinats[0]->image) }}" class="img-fluid rounded img-thumbnail w-25 h-25" alt="{{ $kordinats[0]->nama }}">
+                    <img src="{{ asset('storage/'. $kordinats[0]->image) }}" class="img-fluid rounded img-thumbnail w-50 h-50" alt="{{ $kordinats[0]->nama }}">
                     @else
                     <img src="https://source.unsplash.com/1200x400?{{ $kordinats[0]->nama }}" class="img-fluid rounded img-thumbnail" alt="{{ $kordinats[0]->nama }}">
                     @endif
