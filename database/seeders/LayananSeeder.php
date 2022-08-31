@@ -18,19 +18,19 @@ class LayananSeeder extends Seeder
         Layanan::create([
             'nama_toko' => 'Nusantara Barbershop',
             'nama' => 'pangkas rambut',
-            'harga' => '20.000'
+            'harga' => '20000'
         ]);
 
         Layanan::create([
-            'nama_toko' => 'Putri Barbershop',
-            'nama' => 'botak 0,5',
-            'harga' => '5000000'
+            'nama_toko' => 'Mister Tjoekoer Barbershop',
+            'nama' => 'pangkas rambut',
+            'harga' => '50.000'
         ]);
 
         Layanan::create([
-            'nama_toko' => 'Ikko Barbershop',
+            'nama_toko' => 'PUTRA DAERAH BARBERSHOP',
             'nama' => 'cukur bulu ketiak beruang',
-            'harga' => '50000000'
+            'harga' => '50.000'
         ]);
     }
 }

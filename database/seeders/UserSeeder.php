@@ -34,8 +34,8 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Putri Barbershop',
-            'email' => 'putri.barber@gmail.com',
+            'name' => 'Mister Tjoekoer Barbershop',
+            'email' => 'mister.barber@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
@@ -43,8 +43,8 @@ class UserSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Ikko Barbershop',
-            'email' => 'ikko.barber@gmail.com',
+            'name' => 'PUTRA DAERAH BARBERSHOP',
+            'email' => 'putra.barber@gmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),

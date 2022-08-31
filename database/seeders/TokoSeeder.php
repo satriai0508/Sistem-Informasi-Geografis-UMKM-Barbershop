@@ -31,23 +31,23 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.465523', // latlang
-            'y' => '117.172613', //latlang
+            'x' => '-0.5756353', // latlang
+            'y' => '117.1777153', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
-            'nama' => 'Putri Barbershop',
-            'no_hp' => '082122074447',
-            'alamat' => 'Jl. Reformasi, Bukuan, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
+            'nama' => 'Mister Tjoekoer Barbershop',
+            'no_hp' => '085348443508',
+            'alamat' => 'Jl. Ampera, Rw. Makmur, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
         ]);
 
         Toko::create([
-            'x' => '-0.462351', //latlang
-            'y' => '117.174818', //latlang
+            'x' => '-0.5649395', //latlang
+            'y' => '117.154533', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
-            'nama' => 'Ikko Barbershop',
-            'no_hp' => '085348555518',
-            'alamat' => 'Jl. DI Panjaitan No. 12, Sungai Pinang Dalam, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur'
+            'nama' => 'PUTRA DAERAH BARBERSHOP',
+            'no_hp' => '085231660149',
+            'alamat' => 'C5PC+2RF, RW.Rw, Rw. Makmur, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75251'
         ]);
     }
 }

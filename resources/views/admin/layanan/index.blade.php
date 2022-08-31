@@ -52,15 +52,15 @@
             </td>
             @endif
             <td>
-              @can('admin')
-              <a href="/admin/layanan/{{ $layanan->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
               @cannot('admin')
+              <a href="/admin/layanan/{{ $layanan->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
+              @endcannot
+              @can('admin')
               <form action="/admin/layanan/{{ $layanan->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf
                 <button href="/admin/layanan/{{ $layanan->id }}" class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')"><i data-feather="trash"></i></button>
               </form>
-              @endcannot
               @endcan
             </td>
           </tr>

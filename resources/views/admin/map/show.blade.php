@@ -3,13 +3,12 @@
 @section('container')
     <div class="card">
         <div class="card-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="text-center my-3">
+            <div class="row">
+                    <div class="text-center">
                     @if($kordinats[0]->image)
-                    <img src="{{ asset('storage/'. $kordinats[0]->image) }}" class="card-img-top h-50 w-50" alt="{{ $kordinats[0]->nama }}">
+                    <img src="{{ asset('storage/'. $kordinats[0]->image) }}" class="img-fluid rounded img-thumbnail w-25 h-25" alt="{{ $kordinats[0]->nama }}">
                     @else
-                    <img src="https://source.unsplash.com/1200x400?{{ $kordinats[0]->nama }}" class="card-img-top" alt="{{ $kordinats[0]->nama }}">
+                    <img src="https://source.unsplash.com/1200x400?{{ $kordinats[0]->nama }}" class="img-fluid rounded img-thumbnail" alt="{{ $kordinats[0]->nama }}">
                     @endif
                     <div class="card-body">
                         <h5 class="card-title">{{ $kordinats[0]->nama }}</h5>
@@ -23,12 +22,11 @@
                             <p class="card-text col-md-6"><small class="text-muted"><i data-feather="edit"></i> {{ $kordinats[0]->updated_at->diffForHumans() }}</small></p>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
 
             <div class="container-fluid">
-                <div id="map" style="height: 500px; margin: 50px;">
+                <div id="map" style="height: 500px;">
                     <script>
                         // var map = L.map('map').setView([-0.471852, 117.160556], 13);
                         var curLocation = [0, 0];
