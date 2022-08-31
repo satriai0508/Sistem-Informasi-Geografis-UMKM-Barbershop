@@ -24,4 +24,9 @@ class Peta extends Model
         'jam_buka',
         'jam_tutup'
     ];
+
+    public function getRouteKeyName()
+    {
+        return "nama";
+    }
 }

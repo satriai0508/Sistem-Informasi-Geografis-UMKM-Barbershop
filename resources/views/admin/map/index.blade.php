@@ -53,7 +53,7 @@
 
                         L.circleMarker([ <?= $data->x ?>, <?= $data->y ?>]).addTo(map)
                         .bindPopup('<?= $data->nama ?>'+ '<br>' + '<?= $data->alamat ?>' + '<br>' + '<?= $data->no_hp ?>' +
-                            '<br><a href="/admin/peta/<?= $data->id ?>" class="text-decoration-none text-dark">Selengkapnya</a>')
+                            '<br><a href="/admin/peta/<?= strtolower($data->nama) ?>" class="text-decoration-none text-dark">Selengkapnya</a>')
                         .openPopup();
                     </script>
                 @endforeach

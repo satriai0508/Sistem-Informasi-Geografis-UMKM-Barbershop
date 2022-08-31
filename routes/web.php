@@ -21,14 +21,14 @@ use App\Http\Controllers\PetaController as Peta;
 
 
 Route::get('/', [Peta::class, 'index']);
-Route::get('/peta/{peta}',[Peta::class,'show'])->name('peta.show');
+Route::get('/peta/{peta:nama}',[Peta::class,'show'])->name('peta.show');
 
 Auth::routes();
 Route::middleware(['auth'])->group(function(){
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 
     Route::get('/admin/peta', [PetaController::class, 'index'])->name('adminPeta.index');
-    Route::get('/admin/peta/{peta}', [PetaController::class, 'show'])->name('adminPeta.show');
+    Route::get('/admin/peta/{peta:nama}', [PetaController::class, 'show'])->name('adminPeta.show');
 
     Route::resource('/admin/toko', Toko::class);
     Route::resource('/admin/layanan', Layanan::class)->except(['show']);
