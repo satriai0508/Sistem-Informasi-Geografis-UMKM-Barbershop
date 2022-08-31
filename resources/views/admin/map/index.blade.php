@@ -25,6 +25,10 @@
                         <?php } ?>
                     ];
 
+                    //layer contain searched elements
+                    var markersLayer = new L.LayerGroup();
+                    map.addLayer(markersLayer);
+
                     //Search dengan menandai titik yang dicari
                     map.addControl( new L.Control.Search({
                         layer: markersLayer,
