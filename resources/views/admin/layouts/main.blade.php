@@ -76,9 +76,9 @@
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <header class="topbar" data-navbarbg="skin6">
-      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-        <div class="navbar-header" data-logobg="skin6">
+    <header class="topbar" data-navbarbg="skin5">
+      <nav class="navbar top-navbar navbar-expand-md bg-danger navbar-dark">
+        <div class="navbar-header" data-logobg="skin5">
           <!-- ============================================================== -->
           <!-- Logo -->
           <!-- ============================================================== -->
@@ -87,7 +87,7 @@
             <a href="{{ route('home') }}" class="logo">
               <!-- Logo text -->
               <span class="logo-text logo-icon text-decoration-none text-dark fs-2">
-                <i class="mdi mdi-home-map-marker"></i> {{ env('APP_NAME') }}
+                <i class="mdi mdi-home-map-marker text-white"></i> <p class="text-white d-inline">{{ env('APP_NAME') }}</p>
               </span>
             </a>
           </div>

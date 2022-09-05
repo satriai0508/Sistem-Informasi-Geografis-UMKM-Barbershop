@@ -29,7 +29,19 @@
                 <p class="card-text col-md-6"><small class="text-muted"><i data-feather="plus"></i> {{ $maps[0]->created_at->diffForHumans() }}</small></p>
                 <p class="card-text col-md-6"><small class="text-muted"><i data-feather="edit"></i> {{ $maps[0]->updated_at->diffForHumans() }}</small></p>
               </div>
-
+                @php
+                  $layanans = App\Models\Layanan::where('nama_toko', $maps[0]->nama)->get();
+                @endphp
+                <div class="row">
+                    <p class="card-text col-md-6">Daftar Layanan</p>
+                    <p class="card-text col-md-6">Harga</p>
+                    @if(!empty($layanans))
+                        @foreach($layanans as $layanan)
+                            <p class="card-text col-md-6"> {!! $layanan->nama !!} </p>
+                            <p class="card-text col-md-6"> {!! $layanan->harga !!} </p>
+                        @endforeach
+                    @endif
+                </div>
             </div>
           </div>
         </div>

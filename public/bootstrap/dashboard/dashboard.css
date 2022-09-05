@@ -39,12 +39,12 @@ body {
 
 .sidebar .nav-link {
     font-weight: 500;
-    color: #333;
+    color: rgb(34, 227, 108);
 }
 
 .sidebar .nav-link .feather {
     margin-right: 4px;
-    color: #777;
+    color: rgb(23, 210, 94);
 }
 
 .sidebar .nav-link.active {
