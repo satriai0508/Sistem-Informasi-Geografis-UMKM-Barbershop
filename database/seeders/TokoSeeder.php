@@ -17,6 +17,8 @@ class TokoSeeder extends Seeder
         // isi tokonya disini ikuti contoh
         $jam_buka = '08:00:00';
         $jam_tutup = '22:00:00';
+        $hari_buka = 'Senin';
+        $hari_tutup = 'Minggu';
 
 
         Toko::create([
@@ -24,6 +26,8 @@ class TokoSeeder extends Seeder
             'y' => '117.192165', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Nusantara Barbershop',
             'pemilik' => 'Rian Hidayat',
             'no_hp' => '082122074447',
