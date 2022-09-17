@@ -22,6 +22,8 @@ class CreateTokosTable extends Migration
             $table->string('pemilik')->nullable();
             $table->string('no_hp')->nullable();
             $table->string('alamat')->nullable();
+            $table->string('hari_buka')->nullable();
+            $table->string('hari_tutup')->nullable();
             $table->time('jam_buka')->nullable();
             $table->time('jam_tutup')->nullable();
             $table->timestamps();

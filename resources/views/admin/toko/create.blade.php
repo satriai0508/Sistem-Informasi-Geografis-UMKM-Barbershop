@@ -60,12 +60,38 @@
                     @enderror
                     </div>
                 </div>
+                <div class="form-group row mb-2">
+                    <label for="hari_buka" class="col-sm-3 text-end control-label col-form-label">Hari Buka</label>
+                    <div class="col-md-6">
+                    <input type="text" class="form-control form-control-plaintext @error('hari_buka')
+                                is-invalid
+                            @enderror" id="hari_buka" name="hari_buka" placeholder="Enter Open Day" required value="{{ old('hari_buka') }}"/>
+                    @error('hari_buka')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <label for="hari_tutup" class="col-sm-3 text-end control-label col-form-label">Hari Tutup</label>
+                    <div class="col-md-6">
+                    <input type="text" class="form-control form-control-plaintext @error('hari_tutup')
+                                is-invalid
+                            @enderror" id="hari_tutup" name="hari_tutup" placeholder="Enter Close Day" required value="{{ old('hari_tutup') }}"/>
+                    @error('hari_tutup')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    </div>
+                </div>
                 <div class="form-group row mt-2">
                     <label for="alamat" class="col-sm-3 text-end control-label col-form-label">Alamat</label>
                     <div class="col-md-6">
-                    <input type="text" class="form-control form-control-plaintext @error('alamat')
+                    <textarea type="text" class="form-control form-control-plaintext @error('alamat')
                                 is-invalid
-                            @enderror" id="alamat" name="alamat" placeholder="Enter Address" required value="{{ old('alamat') }}" />
+                            @enderror" id="alamat" name="alamat" placeholder="Enter Address" required value="{{ old('alamat') }}" ></textarea>
                     @error('alamat')
                         <div class="invalid-feedback">
                             {{ $message }}

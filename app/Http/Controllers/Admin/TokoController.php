@@ -59,6 +59,8 @@ class TokoController extends Controller
             'pemilik' => 'required|max:255',
             'jam_buka' => 'required',
             'jam_tutup' => 'required',
+            'hari_buka' => 'required',
+            'hari_tutup' => 'required',
         ]);
 
         if($request->file('image')){
@@ -114,6 +116,8 @@ class TokoController extends Controller
             'pemilik' => 'required|max:255',
             'jam_buka' => 'required',
             'jam_tutup' => 'required',
+            'hari_buka' => 'required',
+            'hari_tutup' => 'required',
             'image' => 'required|max:5120|mimes:jpg,png',
         ]);
 

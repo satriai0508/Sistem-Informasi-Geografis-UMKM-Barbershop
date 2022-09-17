@@ -22,6 +22,8 @@ class TokoFactory extends Factory
             'no_hp' => $this->faker->numerify('08'.'##########'),
             'jam_buka' => $this->faker->time(),
             'jam_tutup' => $this->faker->time(),
+            'hari_buka' => $this->faker->dayOfWeek(),
+            'hari_tutup' => $this->faker->dayOfWeek(),
         ];
     }
 }

@@ -24,7 +24,9 @@ class Toko extends Model
         'x',
         'y',
         'jam_buka',
-        'jam_tutup'
+        'jam_tutup',
+        'hari_buka',
+        'hari_tutup'
     ];
 
     /**

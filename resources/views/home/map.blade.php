@@ -22,6 +22,8 @@
               <p class="card-text text-danger">Harap Lengkapi Data</p>
               @endif
               <div class="row">
+                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Hari buka : {!! $maps[0]->hari_buka !!} WITA</small></p>
+                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Hari tutup : {!! $maps[0]->hari_tutup !!} WITA</small></p>
                 <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Jam buka : {!! \Carbon\Carbon::parse($maps[0]->jam_buka)->format('H:i') !!} WITA</small></p>
                 <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Jam tutup : {!! Carbon\Carbon::parse($maps[0]->jam_tutup)->format('H:i') !!} WITA</small></p>
               </div>
