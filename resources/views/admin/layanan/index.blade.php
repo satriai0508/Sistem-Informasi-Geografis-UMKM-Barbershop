@@ -10,6 +10,9 @@
     @endif
     <div class="d-inline">
       <div class="d-flex justify-content-center ">
+        @can('admin')
+        <a href="/admin/layanan/create" class="btn btn-success mb-2"><i data-feather="file-plus"></i></a>
+        @endcan
         @cannot('admin')
         <a href="/admin/layanan/create" class="btn btn-success mb-2"><i data-feather="file-plus"></i></a>
         @endcannot
@@ -61,6 +64,7 @@
               </form>
               @endcannot
               @can('admin')
+              <a href="/admin/layanan/{{ $layanan->id }}/edit" class="btn btn-warning"><i data-feather="edit"></i></a>
               <form action="/admin/layanan/{{ $layanan->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf

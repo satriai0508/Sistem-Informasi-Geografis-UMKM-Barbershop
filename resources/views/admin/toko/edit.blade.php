@@ -8,8 +8,20 @@
             @csrf
             <div class="card-body mb-2">
                 <h4 class="card-title d-flex justify-content-center pb-2">Edit Data</h4>
-                <input type="hidden" name="nama" value="{{ auth()->user()->name }}">
                 <input type="hidden" name="oldImage" value="{{ $tokos->image }}">
+                <div class="form-group row mb-2">
+                    <label for="nama" class="col-sm-3 text-end control-label col-form-label">Nama Usaha</label>
+                    <div class="col-md-6">
+                    <input type="text" class="form-control form-control-plaintext @error('nama')
+                                is-invalid
+                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama', $tokos->nama) }}" autofocus />
+                    @error('nama')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                    </div>
+                </div>
                 <div class="form-group row mt-2">
                 <label for="pemilik" class="col-sm-3 text-end control-label col-form-label">Pemilik Usaha</label>
                 <div class="col-md-6">
