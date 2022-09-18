@@ -179,7 +179,7 @@ class LayananSeeder extends Seeder
         ]);
 
         Layanan::create([
-            'nama_toko' => 'Bohemians BARBERSHOP',
+            'nama_toko' => 'Old Razors BARBERSHOP',
             'nama' => 'pangkas rambut',
             'harga' => '50.000'
         ]);

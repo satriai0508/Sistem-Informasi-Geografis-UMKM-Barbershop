@@ -22,8 +22,8 @@ class TokoSeeder extends Seeder
 
 
         Toko::create([
-            'x' => '-0.5750325', // latlang
-            'y' => '117.192165', //latlang
+            'x' => '-0.5751417822586963', // latlang
+            'y' => '117.20111849148634', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
             'hari_buka' => $hari_buka,
@@ -36,10 +36,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5756347', // latlang
-            'y' => '117.1543341', //latlang
+            'x' => '-0.57522761275546', // latlang
+            'y' => '117.18893051147      ', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Mister Tjoekoer Barbershop',
             'pemilik' => 'Nurhuda Pasuryan',
             'no_hp' => '085348443508',
@@ -47,10 +49,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5649395', //latlang
-            'y' => '117.154533', //latlang
+            'x' => '-0.56498204950855', //latlang
+            'y' => '117.17216152426', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'PUTRA DAERAH BARBERSHOP',
             'pemilik' => 'Nopyanto',
             'no_hp' => '085231660149',
@@ -59,10 +63,12 @@ class TokoSeeder extends Seeder
 
 
         Toko::create([
-            'x' => '-0.5640677', //latlang
-            'y' => '117.1699189', //latlang
+            'x' => '-0.56442421105684', //latlang
+            'y' => '117.17200026841', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Yoga BARBERSHOP',
             'pemilik' => 'Yoga',
             'no_hp' => '0821369903809',
@@ -70,10 +76,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5643179', //latlang
-            'y' => '117.1715161', //latlang
+            'x' => '-0.56431692480114', //latlang
+            'y' => '117.1714102471', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'M&J BARBERSHOP',
             'pemilik' => 'Rory Januari',
             'no_hp' => '081351764470',
@@ -81,10 +89,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5503765', //latlang
-            'y' => '117.1429718', //latlang
+            'x' => '-0.56291153370456', //latlang
+            'y' => '117.17034764459', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Ponixcut BARBERSHOP',
             'pemilik' => 'Asnawi',
             'no_hp' => '082325283474',
@@ -92,10 +102,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5392191', //latlang
-            'y' => '117.1406544', //latlang
+            'x' => '-0.51429029260049', //latlang
+            'y' => '117.14893336615', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Eghe BARBERSHOP',
             'pemilik' => 'Aldiansyah',
             'no_hp' => '085246855833',
@@ -103,10 +115,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5181056', //latlang
-            'y' => '117.1155918', //latlang
+            'x' => '-0.5250404300272756', //latlang
+            'y' => '117.13675616224991', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Bark BARBERSHOP',
             'pemilik' => 'firman',
             'no_hp' => '082157996011',
@@ -114,10 +128,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5349277', //latlang
-            'y' => '117.1366203', //latlang
+            'x' => '-0.51223068396688', //latlang
+            'y' => '117.14369744942', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => '23 BARBERSHOP',
             'pemilik' => 'Aslam',
             'no_hp' => '082334228639',
@@ -126,10 +142,12 @@ class TokoSeeder extends Seeder
 
 
         Toko::create([
-            'x' => '-0.5264018', //latlang
-            'y' => '117.0735187', //latlang
+            'x' => '-0.52647803422056', //latlang
+            'y' => '117.10902180678', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'DTJOEKOER BARBERSHOP',
             'pemilik' => 'Muhammad Rafisal',
             'no_hp' => '081350316661',
@@ -137,10 +155,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5178829', //latlang
-            'y' => '117.0573481', //latlang
+            'x' => '-0.5190110406717', //latlang
+            'y' => '117.09245463732', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Barrack-Cut BARBERSHOP',
             'pemilik' => 'Galih Novialdi',
             'no_hp' => '081350204332',
@@ -148,10 +168,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5011533', //latlang
-            'y' => '117.0581956', //latlang
+            'x' => '-0.50141653127154', //latlang
+            'y' => '117.10654043128', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Awiers BARBERSHOP',
             'pemilik' => 'Awi',
             'no_hp' => '082288978898',
@@ -159,10 +181,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5016683', //latlang
-            'y' => '117.0748468', //latlang
+            'x' => '-0.50278963453664', //latlang
+            'y' => '117.11751973463', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Classics BARBERSHOP',
             'pemilik' => 'Andre',
             'no_hp' => '082144858888',
@@ -170,10 +194,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4953656', //latlang
-            'y' => '117.0888093', //latlang
+            'x' => '-0.49540857458108', //latlang
+            'y' => '117.12670419675', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Rock N Cut BARBERSHOP',
             'pemilik' => 'Rahman',
             'no_hp' => '085787801698',
@@ -181,10 +207,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4852595', //latlang
-            'y' => '117.0962485', //latlang
+            'x' => '-0.48631084446623', //latlang
+            'y' => '117.12627404112', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Bara BARBERSHOP',
             'pemilik' => 'Steven Alexander Grean Tekwan',
             'no_hp' => '085778882375',
@@ -192,10 +220,12 @@ class TokoSeeder extends Seeder
 
         ]);
         Toko::create([
-            'x' => '-0.4852595', //latlang
-            'y' => '117.0962485', //latlang
+            'x' => '-0.483907599685582', //latlang
+            'y' => '117.12695861858187', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'BeJo BARBERSHOP',
             'pemilik' => 'RM Rohman',
             'no_hp' => '087810112930',
@@ -203,10 +233,12 @@ class TokoSeeder extends Seeder
 
         ]);
         Toko::create([
-            'x' => '-0.4838023', //latlang
-            'y' => '117.1197994', //latlang
+            'x' => '-0.48416515833869', //latlang
+            'y' => '117.12769036607', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Keluncum BARBERSHOP',
             'pemilik' => 'ery hardani',
             'no_hp' => '08125505653',
@@ -214,10 +246,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4968168', //latlang
-            'y' => '117.1277936', //latlang
+            'x' => '-0.49721094005038313', //latlang
+            'y' => '117.13618740323147', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Bejo2 BARBERSHOP',
             'pemilik' => 'Hamdan',
             'no_hp' => '081254305471',
@@ -225,10 +259,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.489073', //latlang
-            'y' => '117.1375965', //latlang
+            'x' => '-0.4891431531878445', //latlang
+            'y' => '117.14618460380844', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'CORNERS BARBERSHOP',
             'pemilik' => 'Didik Purwanto',
             'no_hp' => '085346903383',
@@ -236,10 +272,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5009662', //latlang
-            'y' => '117.1418923', //latlang
+            'x' => '-0.5014164982056557', //latlang
+            'y' => '117.15064880077142', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'GoodFellas BARBERSHOP',
             'pemilik' => 'GoodFellas',
             'no_hp' => '082168149000',
@@ -247,10 +285,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4971751', //latlang
-            'y' => '117.1375317', //latlang
+            'x' => '-0.49703925516883224', //latlang
+            'y' => '117.15425273302132', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'JORDAN HAIR STUDIO BARBERSHOP',
             'pemilik' => 'Cepot',
             'no_hp' => '0811584523',
@@ -258,10 +298,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4969176', //latlang
-            'y' => '117.1436686', //latlang
+            'x' => '-0.49092407449122133', //latlang
+            'y' => '117.16219434656837', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'JooxBox BARBERSHOP',
             'pemilik' => 'Wahid',
             'no_hp' => '08115832880',
@@ -269,10 +311,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.5024174', //latlang
-            'y' => '117.1566129', //latlang
+            'x' => '-0.5025751539049782', //latlang
+            'y' => '117.15657235304298', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Star BARBERSHOP',
             'pemilik' => 'Nesya nesa',
             'no_hp' => '08113542787',
@@ -280,10 +324,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4897849', //latlang
-            'y' => '117.1535891', //latlang
+            'x' => '-0.4901730893480705', //latlang
+            'y' => '117.1617200696629', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Outcast BARBERSHOP',
             'pemilik' => 'Irwan',
             'no_hp' => '085250162960',
@@ -291,10 +337,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4835628', //latlang
-            'y' => '117.1549363', //latlang
+            'x' => '-0.48373601882722705', //latlang
+            'y' => '117.15425451286522', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Alaika BARBERSHOP',
             'pemilik' => 'juman mahkota',
             'no_hp' => '082250337778',
@@ -302,10 +350,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.487017', //latlang
-            'y' => '117.1365352', //latlang
+            'x' => '-0.4776744224065633', //latlang
+            'y' => '117.16574529768776', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'MERAH PUTIH BARBERSHOP',
             'pemilik' => 'Akbar',
             'no_hp' => '085102522099',
@@ -313,10 +363,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4815055', //latlang
-            'y' => '117.1513263', //latlang
+            'x' => '-0.48120409295347705', //latlang
+            'y' => '117.15356768937303', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Bohemians BARBERSHOP',
             'pemilik' => 'Felix',
             'no_hp' => '085158880619',
@@ -324,10 +376,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4907095', //latlang
-            'y' => '117.1288195', //latlang
+            'x' => '-0.49094553447558', //latlang
+            'y' => '117.13296783468', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Old Razors BARBERSHOP',
             'pemilik' => 'Reza',
             'no_hp' => '082297787856',
@@ -335,10 +389,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.4907095', //latlang
-            'y' => '117.1288195', //latlang
+            'x' => '-0.487040344556', //latlang
+            'y' => '117.13279768617', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'TANGGA BARBERSHOP',
             'pemilik' => 'Alex Sun',
             'no_hp' => '0823936908811',
@@ -346,10 +402,12 @@ class TokoSeeder extends Seeder
         ]);
 
         Toko::create([
-            'x' => '-0.482293', //latlang
-            'y' => '117.1152717', //latlang
+            'x' => '-0.48442266187214', //latlang
+            'y' => '117.13202719005', //latlang
             'jam_buka' => $jam_buka,
             'jam_tutup' => $jam_tutup,
+            'hari_buka' => $hari_buka,
+            'hari_tutup' => $hari_tutup,
             'nama' => 'Bujang BARBERSHOP',
             'pemilik' => 'Alex Sun',
             'no_hp' => '0823936908811',
