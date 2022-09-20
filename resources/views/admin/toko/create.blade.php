@@ -8,7 +8,19 @@
                 <div class="card-body">
                 <h4 class="card-title d-flex justify-content-center">Create Data</h4>
                 @cannot('admin')
-                <input type="hidden" name="nama" value="{{ auth()->user()->name }}">
+                 <div class="form-group row mb-2">
+                    <label for="nama" class="col-sm-3 text-end control-label col-form-label">Nama Usaha</label>
+                    <div class="col-md-6">
+                    <input type="text" class="form-control form-control-plaintext @error('nama')
+                                is-invalid
+                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama') }}" readonly />
+                    @error('nama')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                    </div>
+                </div>
                 @endcannot
                 @can('admin')
                 <div class="form-group row mb-2">
@@ -16,7 +28,7 @@
                     <div class="col-md-6">
                     <input type="text" class="form-control form-control-plaintext @error('nama')
                                 is-invalid
-                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama', $tokos->nama) }}" readonly />
+                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama') }}" readonly />
                     @error('nama')
                     <div class="invalid-feedback">
                         {{ $message }}
