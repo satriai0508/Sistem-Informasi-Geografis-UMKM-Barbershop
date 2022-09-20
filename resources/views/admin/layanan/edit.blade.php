@@ -13,6 +13,21 @@
                     @endcannot
                     @can('admin')
                     <div class="form-group row mb-2">
+                        <label for="nama_toko" class="col-sm-3 text-end control-label col-form-label">Nama Usaha</label>
+                        <div class="col-md-6">
+                            <input type="text" 
+                                class="form-control form-control-plaintext @error('nama_toko') is-invalid @enderror"
+                                id="nama_toko" name="nama_toko" placeholder="Enter Models" required
+                                value="{{ old('nama_toko', $layanans->nama_toko) }}" readonly />
+                            @error('nama_toko')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                    </div>
+                    @endcan
+                    <div class="form-group row mb-2">
                         <label for="nama" class="col-sm-3 text-end control-label col-form-label">Daftar Layanan</label>
                         <div class="col-md-6">
                             <input type="text" 
@@ -26,7 +41,6 @@
                             @enderror
                         </div>
                     </div>
-                    @endcan
                     <div class="form-group row mb-2">
                         <label for="harga" class="col-sm-3 text-end control-label col-form-label">Harga (Rp)</label>
                         <div class="col-md-6">  

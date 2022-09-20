@@ -17,7 +17,7 @@
                     <div class="col-md-6">
                     <input type="text" class="form-control form-control-plaintext @error('nama')
                                 is-invalid
-                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama', $tokos->nama) }}" autofocus />
+                            @enderror" id="nama" name="nama" placeholder="Enter Nama Toko" required value="{{ old('nama', $tokos->nama) }}" readonly />
                     @error('nama')
                     <div class="invalid-feedback">
                         {{ $message }}
