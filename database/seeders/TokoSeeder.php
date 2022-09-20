@@ -20,7 +20,6 @@ class TokoSeeder extends Seeder
         $hari_buka = 'Senin';
         $hari_tutup = 'Minggu';
 
-
         Toko::create([
             'x' => '-0.5751417822586963', // latlang
             'y' => '117.20111849148634', //latlang
@@ -32,7 +31,6 @@ class TokoSeeder extends Seeder
             'pemilik' => 'Rian Hidayat',
             'no_hp' => '082122074447',
             'alamat' => 'Jl. Reformasi, Bukuan, Kec. Palaran, Kota Samarinda, Kalimantan Timur 75256'
-
         ]);
 
         Toko::create([

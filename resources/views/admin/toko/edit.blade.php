@@ -8,7 +8,10 @@
             @csrf
             <div class="card-body mb-2">
                 <h4 class="card-title d-flex justify-content-center pb-2">Edit Data</h4>
+                @cannot('admin')
                 <input type="hidden" name="oldImage" value="{{ $tokos->image }}">
+                @endcannot
+                @can('admin')
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-3 text-end control-label col-form-label">Nama Usaha</label>
                     <div class="col-md-6">
@@ -22,6 +25,7 @@
                     @enderror
                     </div>
                 </div>
+                @endcan
                 <div class="form-group row mt-2">
                 <label for="pemilik" class="col-sm-3 text-end control-label col-form-label">Pemilik Usaha</label>
                 <div class="col-md-6">

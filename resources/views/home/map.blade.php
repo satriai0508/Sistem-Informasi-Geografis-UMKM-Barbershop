@@ -17,13 +17,13 @@
             <div class="card-body">
               <h5 class="card-title">{{ $maps[0]->nama }}</h5>
               @if($maps[0])
-              <p class="card-text">Alamat : {{ $maps[0]->alamat }}. No HP : {{ $maps[0]->no_hp }}. Owner : {{ $maps[0]->pemilik }}.</p>
+              <p class="card-text">Alamat : {{ $maps[0]->alamat }}.<br> No HP : {{ $maps[0]->no_hp }}.<br> Owner : {{ $maps[0]->pemilik }}.</p>
               @else
               <p class="card-text text-danger">Harap Lengkapi Data</p>
               @endif
               <div class="row">
-                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Hari buka : {!! $maps[0]->hari_buka !!} </small></p>
-                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Hari tutup : {!! $maps[0]->hari_tutup !!} </small></p>
+                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="home"></i> Hari buka : {!! $maps[0]->hari_buka !!} </small></p>
+                <p class="card-text col-md-6"><small class="text-dark"><i data-feather="home"></i> Hari tutup : {!! $maps[0]->hari_tutup !!} </small></p>
                 <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Jam buka : {!! \Carbon\Carbon::parse($maps[0]->jam_buka)->format('H:i') !!} WITA</small></p>
                 <p class="card-text col-md-6"><small class="text-dark"><i data-feather="clock"></i> Jam tutup : {!! Carbon\Carbon::parse($maps[0]->jam_tutup)->format('H:i') !!} WITA</small></p>
               </div>
